@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="90dp">
+
+    <LinearLayout
+        android:id="@+id/add_edit_todo_dialog_input_area"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/add_edit_todo_dialog_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_edit_todo_dialog_header_add"
+            android:textSize="25sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/add_edit_todo_dialog_todo_name_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:labelFor="@id/add_edit_todo_dialog_todo_name"
+                    android:text="@string/add_edit_todo_dialog_todo_name_tag"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/add_edit_todo_dialog_todo_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="NIC"
+                    android:hint="@string/add_edit_todo_dialog_todo_name_hint"
+                    android:ems="10"
+                    android:inputType="text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/add_edit_todo_dialog_todo_description_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:labelFor="@id/add_edit_todo_dialog_todo_description"
+                    android:text="@string/add_edit_todo_dialog_todo_description_tag"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/add_edit_todo_dialog_todo_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="NIC"
+                    android:hint="@string/add_edit_todo_dialog_todo_description_hint"
+                    android:ems="10"
+                    android:inputType="text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/add_edit_todo_dialog_todo_date_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:labelFor="@id/add_edit_todo_dialog_todo_date"
+                    android:text="@string/add_edit_todo_dialog_date_tag"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/add_edit_todo_dialog_todo_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="Date"
+                    android:hint="@string/add_edit_todo_dialog_date_hint"
+                    android:ems="10"
+                    android:inputType="date"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/add_edit_todo_dialog_negative_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:layout_weight="1"
+            android:paddingVertical="20dp"
+            android:text="@string/add_edit_todo_dialog_negative_btn_tag"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/add_edit_todo_dialog_positive_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/teal_700"
+            android:layout_weight="1"
+            android:paddingVertical="20dp"
+            android:text="@string/add_edit_todo_dialog_positive_btn_tag"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Todo</string>
+    <string name="nothing_to_show">Nothing to show</string>
+    <string name="todo_view_item_todo_name_tag">Title</string>
+    <string name="todo_view_item_todo_description_tag">Description</string>
+    <string name="todo_view_item_todo_date_tag">Date</string>
+    <string name="todo_view_item_todo_completed_date_tag">Completed Date</string>
+
+    <string name="add_edit_todo_dialog_todo_name_hint">Wake up</string>
+    <string name="add_edit_todo_dialog_todo_name_tag">Title</string>
+    <string name="add_edit_todo_dialog_todo_description_hint">Get down from the bed</string>
+    <string name="add_edit_todo_dialog_todo_description_tag">Description</string>
+    <string name="add_edit_todo_dialog_negative_btn_tag">Cancel</string>
+    <string name="add_edit_todo_dialog_positive_btn_tag">Add</string>
+    <string name="add_edit_todo_dialog_positive_btn__edit_tag">Edit</string>
+    <string name="add_edit_todo_dialog_header_add">Add New Todo</string>
+    <string name="add_edit_todo_dialog_header_edit">Edit Todo</string>
+    <string name="add_edit_todo_dialog_date_tag">Date</string>
+    <string name="add_edit_todo_dialog_date_hint">01/08/2021</string>
+    <string name="date_format">dd-MM-yyyy</string>
+    <string name="date_format_placeholder">DD/MM/YYYY</string>
+    <string name="date_format_placeholder_signature">%s-%s-%d</string>
+
+    <string name="confirm_dialog_message">Message</string>
+    <string name="confirm_dialog_negative_btn_tag">Cancel</string>
+    <string name="confirm_dialog_positive_btn_tag">Confirm</string>
+
+    <string name="completed_list">Completed TodoList</string>
+    <string name="completed">Completed</string>
+    <string name="remaining_list">Remaining TodoList</string>
+    <string name="remaining">Remaining</string>
+
+</resources>
